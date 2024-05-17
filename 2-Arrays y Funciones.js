@@ -31,7 +31,15 @@ function buscar (palabra) {
     }
 }
 
-//Crea una función que valide si el resultado de la suma de todos los números del array "numeros" es 
+//o también podriamos hacer directamente
+function validarPalabra(palabra) {
+    return texto.includes(palabra);
+  }
 
+//Crea una función que valide si el resultado de la suma de todos los números del array "numeros" es igual al número que se pasa como argumento a la función.
 
-//igual al número que se pasa como argumento a la función.
+function validarSuma(numero) {
+    const numerosTotal = numeros.reduce((accumulator, currentValue) =>
+        accumulator + currentValue);
+    return numero === numerosTotal
+}
