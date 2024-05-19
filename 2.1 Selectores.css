@@ -1,0 +1,56 @@
+/* Utiliza el selector "h1" para cambiar el color del texto del título a rojo y tamaño 20px. */
+h1 {
+    color: red;
+    font-size: 20px;
+}
+
+/* Utiliza el selector "p" para cambiar el tamaño de la fuente del párrafo a 16px. */
+p {
+    font-size: 16px;
+}
+
+/* Utiliza el selector "a" para cambiar el color de fondo del enlace a azul. */
+a {
+    background-color: blue;
+}
+
+/* El "h2" debe ser de color verde y tamaño 18px. */
+h2 {
+    color: green;
+    font-size: 18px;
+}
+
+/* El "h2" del "section " debe ser de color azul. */
+section h2 {
+    color: blue;
+}
+
+/* El "a" del "article " debe ser de color negro y fondo rojo. */
+article a {
+    color: black;
+    background-color: red;
+}
+
+/* El "p" del "article" con la clase "párrafo" debe ser de color amarillo */
+article p.párrafo {
+    color: yellow;
+}
+
+/* Los "a" del "nav" deben ser de diferentes colores */
+nav a {
+    color: orange;
+}
+
+/* El "footer" tiene que tener el fondo morado */
+footer {
+    background-color: purple;
+}
+
+/* En el "footer" El primer párrafo debe ser blanco y el segundo amarillo */
+footer p.first-child {
+    color: white;
+}
+
+.footer p.last-child {
+    color: yellow;
+}
