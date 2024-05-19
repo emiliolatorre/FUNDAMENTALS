@@ -1,0 +1,43 @@
+/* Modelo de caja */
+/* Debe medir 300px de ancho y 300px de alto */
+/* Haz que el fondo sea de color rojo */
+/* Tiene que tener un espacio interior de 10px por cada lado */
+/* Tiene que tener un espacio exterior de 15px por cada lado */
+/* Tiene que tener un borde del color elijas pero con 5px a la derecha e izquierda y de 10px arriba y abajo con linea continua */
+.caja {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    padding: 10px;
+    margin: 15px;
+    border: (10px, 5px) solid yellowgreen;
+}
+
+/* Posición */
+/* Las dos siguientes cajas deben medir 300px de ancho y 300px de alto */
+/* Haz que el fondo de la primera sea de color amarillo */
+/* Haz que el fondo de la segunda sea de color verde */
+/* Las dos tienen que tener un espacio interior de 10px por cada lado */
+/* Las dos tienen que tener un espacio exterior de 15px por cada lado */
+/* Una de ellas tiene que tener un borde del color elijas pero con 5px a la derecha e izquierda y de 10px arriba y abajo con linea continua. La otra con otro color de borde y e inveridos los tamaños de los bordes */
+/* Haz que la amarilla esté encima de la verde. Además que quede desplazada 40px desde el borde superior y a 20px desde el borde izquierdo de la verde */
+.caja1 {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    padding: 10px;
+    margin: 15px;
+    border: 10px 5px solid brown;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+
+.caja2 {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    padding: 10px;
+    margin: 15px;
+    border: 5px 10px solid black;
+}
