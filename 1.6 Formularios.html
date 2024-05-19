@@ -1,0 +1,60 @@
+<!-- Crea un formulario en HTML. El formulario tendrá que tener los siguiente:
+Recuerda que todo formulario tiene que llevar la etiqueta "form" y no olvides el atributo "name" siempre que sea necesario
+input tipo text para escribir el nombre y un placeholder "nombre"
+input tipo email para escribir el nombre y un placeholder "correo electrónico"
+input tipo text para escribir el asunto y un placeholder "asunto"
+textarea para escribir el cuerpo del mail y un placeholder "Mensaje"
+un checkbox con value "sí" y un label que ponga "Deseo recibir información sobre novedades y ofertas"
+Por último un input tipo submit con value "Enviar" -->
+<form action="#" method="post" name="formulario de prueba">
+    <label for="nombre">Nombre</label>
+    <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Nombre"
+        required
+    />
+
+    <label for="email">Email</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="correo electrónico"
+        required
+    />
+
+    <label for="asunto">Asunto</label>
+    <input
+        type="text"
+        id="asunto"
+        name="asunto"
+        placeholder="asunto"
+        required
+    />
+
+    <label for="mensaje">Mensaje</label>
+    <textarea
+        id="mensaje"
+        name="mensaje"
+        placeholder="Mensaje"
+        required
+    ></textarea>
+
+    <label for="checkbox">Deseo recibir información sobre novedades y ofertas</label>
+    <input
+        type="checkbox"
+        id="checkbox"
+        name="checkbox"
+        value="sí"
+    />
+
+    <input
+        type="submit"
+        id="submit"
+        name="submit"
+        value="Enviar"
+    >
+
+</form>
