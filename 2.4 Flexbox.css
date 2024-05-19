@@ -1,0 +1,50 @@
+/* Los elementos del "nav" (Inicio, Sobre Nosotros y Contacto) tienen que estar uno al lado del otro. Deja espacio suficiente entre ellos para que no se monten */
+/* Además deberán estar alineados y justificacos al centro de la cabecera */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+/* El "article" y el "aside" tienen que estar uno al lado del otro pero que ocupen el espacio entero del "section" */
+/* Los elementos del "footer" deben estar uno al lado del otro y centrados */
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+    padding: 20px;
+    background-color: beige;
+}
+
+aside {
+    flex: 0 0 200px;
+    padding: 10px;
+    background-color: beige;
+}
+
+/* BONUS */
+/* Puedes quitar los bullets a las listas que sean menús y los subrayados a los enlaces */
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  footer ul li {
+    padding: 10px;
+    margin: 0 5px;
+    border-bottom: none;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    border-bottom: none;
+  }
