@@ -1,0 +1,69 @@
+/* Texto */
+/* Haz que el texto sea de color ROJO */
+/* Al quitar el puntero haga la misma transición pero a la inversa */
+.texto {
+    color: red
+    transition: all 1s linear;
+}
+
+/* Cuando pase el ratón por encima del texto debe de hacer una transición de 0.5s a VERDE */
+.texto:hover {
+    transition: red 1s linear;
+}
+
+/* Cuadrado */
+/* Muevelo hacia abajo 50px */
+/* Hazlo 1.5 más grande */
+/* Haz que el gire 45º */
+.cuadrado {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    transform: rotate(45deg);
+}
+
+/* Círculo */
+/* Crea una animación infinita que haga lo siguiente:
+0%: El tamaño es el inicial y la posición también
+50%: El tamaño es 1.5 más grande y la posición son 300px haciaa la derecha
+100%: El tamaño es el inicial y la posición también */
+
+@keyframes animaciónCirculo {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(300px);
+        width: 150px;
+        height: 150px;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.circulo {
+    animation: animaciónCirculo 1s infinite;
+}
+
+/*Animación extra */
+/*Haz la misma animación (movimiento y crecimiento) que la del círculo, para el cuadrado pero con los siguientes valores de giro:
+0% esté gire a 45º
+50% en 0º
+100% 135º*/
+
+@keyframes animaciónCuadrado {
+    0% {
+        transform: rotate(45deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(135deg)
+    }
+}
+
+.cuadrado {
+    animation: animaciónCuadrado 1s infinite;
+}
